@@ -1,8 +1,16 @@
 <h1>
   <strong>Mrs.Cocktail</strong>
 </h1>
-
 <h2><%= @cocktail.name %></h2>
-<h2><%= @dose.description %></h2>
-<h2><%= @ingredient.name %></h2>
+
+<ul class="list-inline">
+  <% @cocktail.doses.each do |dose| %>
+  <li class="list-inline-item">
+    <%= Ingredient.find(dose.ingredient_id).name %>: <%= dose.description %> | <%= link_to 'Delete', dose_path(dose), method: :delete, data: { confirm: 'Are you sure?' } %>
+  </li>
+  <% end %>
+</ul>
+
+<%= render 'shared/new' %>
+
 <%= link_to 'Back to homepage', cocktails_path %>
