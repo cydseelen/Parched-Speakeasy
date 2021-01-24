@@ -5,4 +5,5 @@ class Cocktail < ApplicationRecord
 
   validates :name, uniqueness: { case_sensitive: false }
   validates :name, presence: true
+  validates :photo, presence: true
 end
