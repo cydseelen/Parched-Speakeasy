@@ -3,4 +3,23 @@
 @import "avatar";
 @import "navbar";
 
+body {
+  background-color: $spangray;
+}
 
+h1 {
+  color: $rosewood;
+}
+
+a {
+  color: $rosewood;
+  font-family: "Quicksand";
+  font-weight: bold;
+  font-size: 20px;
+
+
+  &:hover {
+    color: $jungreen;
+    text-decoration: none;
+  }
+}
