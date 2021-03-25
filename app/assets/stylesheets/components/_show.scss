@@ -1,0 +1,29 @@
+.center-card {
+  margin: 0 auto;
+  text-align: center;
+  border: none;
+  opacity: .87;
+  color: white;
+  border-radius: 22px;
+  background-color: black;
+  width: 75%;
+  padding: 70px;
+  padding-top: 50px;
+  height: 88vh;
+}
+
+li.list-inline-item{
+  color: $morningblue;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.form-control {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.column1 {
+  float: left;
+  // width: 50%;
+}
