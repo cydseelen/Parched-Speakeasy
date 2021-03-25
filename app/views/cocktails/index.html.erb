@@ -3,18 +3,11 @@
     <h1>
       Parched Speakeasy
     </h1>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <%= link_to "What'll ya have?", "#", class: "nav-link" %>
-        </li>
-      </ul>
-    </div>
   </div>
   <div class="center-card">
+    <h2>
+      Menu
+    </h2>
     <div class="cocktails-list">
       <ul>
         <% @cocktails.each do |cocktail| %>
@@ -23,7 +16,7 @@
       </ul>
     </div>
     <div>
-      <%= link_to "Create your own cocktail", new_cocktail_path %>
+      <%= link_to "Create Your Own", new_cocktail_path, class: "button-main py-2 px-4" %>
     </div>
   </div>
 </div>

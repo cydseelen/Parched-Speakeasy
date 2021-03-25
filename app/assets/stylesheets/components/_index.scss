@@ -17,6 +17,18 @@ body {
   background-position: center;
 }
 
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+li {
+  margin: 10px 0;
+}
+
 .center-card {
   margin: 0 auto;
   text-align: center;
@@ -33,9 +45,39 @@ body {
 
 a {
   color: white;
+  text-decoration: none;
 }
 
 .cocktails-list li {
-  text-decoration: none;
+  font-family: "Quando";
+  font-size: 30px;
+  list-style-type: none;
   color: white;
+
+  // &:hover {
+  //   color: pink;
+  // }
+}
+
+.center-card .button-main {
+  font-size: 15px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  font-weight: bold;
+  border-radius: 32px;
+  width: 200px;
+  // margin-top: 20px;
+  padding: 2px;
+  letter-spacing: -1px;
+}
+a.button-main {
+  text-decoration: none;
+
+  transition: 0.3s ease;
+}
+
+a.button-main:hover {
+  box-shadow: 1px 1px 10px #fff;
+  text-shadow: 1px 1px 10px #fff;
 }
