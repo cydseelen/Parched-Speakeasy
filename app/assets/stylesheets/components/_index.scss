@@ -21,8 +21,9 @@ h1 {
   font-size: 30px;
 }
 
-h2 {
+.center-card h2 {
   text-decoration: underline;
+  color: #cacaaa;
 }
 
 li {
@@ -46,6 +47,11 @@ li {
 a {
   color: white;
   text-decoration: none;
+
+  &:hover {
+    color: #cacaaa;
+    text-decoration: none;
+  }
 }
 
 .cocktails-list li {
@@ -53,10 +59,10 @@ a {
   font-size: 30px;
   list-style-type: none;
   color: white;
+}
 
-  // &:hover {
-  //   color: pink;
-  // }
+ul {
+  padding-inline-start: 0;
 }
 
 .center-card .button-main {
