@@ -1,13 +1,26 @@
-<h1>
-  <strong>Parched Speakeasy</strong>
-</h1>
-
-<h2>Create a new cocktail</h2>
-
-<%= simple_form_for @cocktail do |f| %>
+<div class="background">
+  <div class="navbar">
+    <h1>
+      Parched Speakeasy
+    </h1>
+  </div>
+  <div class="center-card">
+    <h2>
+      Name your cocktail
+    </h2>
+    <p>You can add ingredients and doses later</p>
+    <div class="cocktail-upload">
+      <ul>
+        <%= simple_form_for @cocktail do |f| %>
         <%= f.input :name %>
         <%= f.input :photo, as: :file %>
-        <%= f.button :submit, class: 'btn btn-primary' %>
-      <% end %>
-
-<%= link_to 'Back to homepage', cocktails_path %>
+        <%= f.button :submit, class: 'button-main py-2 px-3' %>
+        <% end %>
+      </ul>
+    </div>
+    <br>
+    <div>
+      <%= link_to 'Back to homepage', cocktails_path %>
+    </div>
+  </div>
+</div>
