@@ -4,7 +4,7 @@
 @import "navbar";
 
 body {
-  background-color: $spangray;
+  background-color: $backgroundsage;
 }
 
 h1 {
@@ -19,7 +19,7 @@ a {
 
 
   &:hover {
-    color: $jungreen;
+    color: $steelteal;
     text-decoration: none;
   }
 }
