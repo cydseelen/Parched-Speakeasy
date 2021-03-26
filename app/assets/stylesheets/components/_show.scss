@@ -1,4 +1,4 @@
-.center-card {
+.wide .center-card {
   margin: 0 auto;
   text-align: center;
   border: none;
@@ -6,7 +6,7 @@
   color: white;
   border-radius: 22px;
   background-color: black;
-  width: 75%;
+  width: 75% !important;
   padding: 70px;
   padding-top: 50px;
   height: 88vh;
@@ -26,4 +26,27 @@ li.list-inline-item{
 .column1 {
   float: left;
   // width: 50%;
+}
+
+.center-card .button-main {
+  font-size: 15px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  font-weight: bold;
+  border-radius: 32px;
+  width: 200px;
+  // margin-top: 20px;
+  padding: 2px;
+  letter-spacing: -1px;
+}
+a.button-main {
+  text-decoration: none;
+
+  transition: 0.3s ease;
+}
+
+a.button-main:hover {
+  box-shadow: 1px 1px 10px #fff;
+  text-shadow: 1px 1px 10px #fff;
 }
