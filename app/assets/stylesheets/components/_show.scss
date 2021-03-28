@@ -16,11 +16,21 @@ li.list-inline-item{
   color: $morningblue;
   margin-bottom: 0;
   margin-top: 0;
+  display: inline-block;
+  white-space: pre-wrap;
 }
 
+.card-row{
+  display: flex;
+}
 .form-control {
-  width: 50%;
+  width: 75%;
   margin: 0 auto;
+}
+
+.col {
+  min-width: 40%;
+  width: 47%;
 }
 
 .column1 {
@@ -49,4 +59,9 @@ a.button-main {
 a.button-main:hover {
   box-shadow: 1px 1px 10px #fff;
   text-shadow: 1px 1px 10px #fff;
+}
+
+.link-row {
+  display: flex;
+  justify-content: center;
 }

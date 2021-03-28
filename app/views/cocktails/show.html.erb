@@ -7,26 +7,23 @@
   <div class="wide">
     <div class="center-card">
       <div class="card-row">
-
-        <div class="column1">
+        <div class="col column1">
           <h2 class="try"><%= @cocktail.name %></h2>
           <%= cl_image_tag @cocktail.photo.key,
-          width: 200, height: 150, crop: :fill, style: "border-radius: 8px;" %>
+          width: 300, height: 200, crop: :fill, style: "border-radius: 8px;" %>
           <ul class="list-inline">
             <li class="list-inline-item">
-  <% @cocktail.doses.each do |dose| %>
+              <% @cocktail.doses.each do |dose| %>
               <%= Ingredient.find(dose.ingredient_id).name %>: <%= dose.description %> | <%= link_to 'Delete', dose_path(dose), method: :delete, data: { confirm: 'Are you sure?' } %>
               <% end %>
-
             </li>
           </ul>
         </div>
-        <div class="column2">
+        <div class="col column2">
           <%= render 'shared/new' %>
           <br>
-          <%= link_to 'Back to homepage', cocktails_path %>
+            <%= link_to 'Back to homepage', cocktails_path, class: "link-row" %>
         </div>
-
       </div>
     </div>
   </div>
