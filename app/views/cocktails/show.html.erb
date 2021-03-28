@@ -1,32 +1,33 @@
 <div class="background">
   <div class="navbar">
     <h1>
-      Parched Speakeasy
+    Parched Speakeasy
     </h1>
   </div>
   <div class="wide">
     <div class="center-card">
       <div class="card-row">
+
         <div class="column1">
-          <h2><%= @cocktail.name %></h2>
+          <h2 class="try"><%= @cocktail.name %></h2>
           <%= cl_image_tag @cocktail.photo.key,
           width: 200, height: 150, crop: :fill, style: "border-radius: 8px;" %>
-          <div class="dose-edit">
-            <ul class="list-inline">
-              <% @cocktail.doses.each do |dose| %>
-              <li class="list-inline-item">
-                <%= Ingredient.find(dose.ingredient_id).name %>: <%= dose.description %> | <%= link_to 'Delete', dose_path(dose), method: :delete, data: { confirm: 'Are you sure?' } %>
-              </li>
-            </div>
-            <% end %>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+  <% @cocktail.doses.each do |dose| %>
+              <%= Ingredient.find(dose.ingredient_id).name %>: <%= dose.description %> | <%= link_to 'Delete', dose_path(dose), method: :delete, data: { confirm: 'Are you sure?' } %>
+              <% end %>
+
+            </li>
           </ul>
         </div>
         <div class="column2">
-         <%= render 'shared/new' %>
-         <br>
-         <%= link_to 'Back to homepage', cocktails_path %>
-       </div>
-     </div>
-   </div>
- </div>
+          <%= render 'shared/new' %>
+          <br>
+          <%= link_to 'Back to homepage', cocktails_path %>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </div>
