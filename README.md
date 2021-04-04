@@ -1,24 +1,7 @@
-# README
+# Parched-Speakeasy
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Parched-Speakeasy is a simple, *fun* **Ruby-on-Rails** application you can use to practice your bartending skills, create, and store cool cocktail recipes.
 
-Things you may want to cover:
+It's a Rails app generated with lewagon/rails-templates, created by the Le Wagon coding bootcamp team.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Available at: [https://parched-speakeasy.herokuapp.com/](https://parched-speakeasy.herokuapp.com/)
