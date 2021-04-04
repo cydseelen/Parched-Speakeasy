@@ -4,4 +4,6 @@ Parched-Speakeasy is a simple, *fun* **Ruby-on-Rails** application you can use t
 
 It's a Rails app generated with lewagon/rails-templates, created by the Le Wagon coding bootcamp team.
 
+rails-6.0.3.4
+
 Available at: [https://parched-speakeasy.herokuapp.com/](https://parched-speakeasy.herokuapp.com/)
